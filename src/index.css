@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #F8FAFB;
+  --color-primary-medium: #E8ECF0;
+  --color-primary-dark: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+* {
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-medium);
+}
+
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-primary-medium);
+}
+::-webkit-scrollbar-thumb {
+  background: #c6c9cc; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background:  #a8aaac;
+}
+
+

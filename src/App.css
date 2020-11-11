@@ -1,0 +1,32 @@
+:root {
+  --map-height: 40rem;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 3rem auto;
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+  padding: 3rem;
+  background-color: var(--color-primary);
+}
+
+.header {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 50%;
+  height: var(--map-height);
+  position: relative;
+}
+
