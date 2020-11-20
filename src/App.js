@@ -1,9 +1,9 @@
-import React, { useState} from 'react';
 import './App.css';
+import React, { useState} from 'react';
 import { YMaps, Map, Polyline } from 'react-yandex-maps';
-import SettingCoordinatesPanel from './SettingСoordinatesPanel.js';
+import { SettingCoordinatesPanel } from './SettingСoordinatesPanel.js';
 
-const App = () => {
+export const App = () => {
   const [coordinateList, setCoordinateList] = useState([]);
 
   return (
@@ -13,13 +13,7 @@ const App = () => {
         <div className="map">
           <YMaps>
             <Map
-              style={{
-                position: 'absolute',
-                left: 0,
-                top: 0,
-                width: '100%',
-                height: '100%'
-              }}
+              className="map__item"
               defaultState={{
                 center: [55.753215, 37.622504],
                 zoom: 5,
@@ -43,4 +37,3 @@ const App = () => {
   );
 }
 
-export default App;

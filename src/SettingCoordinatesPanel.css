@@ -1,4 +1,4 @@
-:root {
+.sidebar {
   --item-height: 5rem;
   --item-left-padding: 1rem;
 
@@ -6,9 +6,7 @@
 
   --sidebar-padding: 2rem;
   --gutter-vertical: 2rem;
-}
 
-.sidebar {
   width: 40rem;
   background-color: var(--color-primary);
   padding: var(--sidebar-padding);
@@ -19,10 +17,9 @@
   list-style-type: none;
   overflow-y: scroll;
   max-height: calc(var(--map-height) - 2*var(--sidebar-padding) - var(--item-height) - var(--gutter-vertical));
-  z-index: 0;
 }
 
-li {
+.list li {
   cursor: move;
   margin-bottom: var(--gutter-vertical);  
   padding-left: var(--item-left-padding);
@@ -32,7 +29,7 @@ li {
   align-items: center; 
 }
 
-li:hover {
+.list li:hover {
   z-index: 5;
   background-color: #fffee2; 
   border: 1.5px solid #f3f118;
